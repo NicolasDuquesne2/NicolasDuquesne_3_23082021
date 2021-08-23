@@ -1,0 +1,14 @@
+@function lighten-color($color, $rate) {
+    @return lighten($color, $rate);
+}
+
+@mixin hero-button-state($alt: 0) {
+    background: linear-gradient($secondary-color, $primary-color);
+    box-shadow: 5px 5px 5px $bg-grey, -5px 5px $bg-grey;
+
+    @if $alt == 1 {
+        background: linear-gradient(lighten-color($secondary-color, 2%), lighten-color($primary-color, 2%));
+        cursor: pointer;
+        box-shadow: 7px 7px 8px $bg-grey, -7px 8px $bg-grey;
+    }
+}

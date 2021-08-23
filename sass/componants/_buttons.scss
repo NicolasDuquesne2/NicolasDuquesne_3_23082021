@@ -1,0 +1,11 @@
+.button-hero {
+    width: 70%;
+    height: 50px;
+    border-radius: 30px;
+    border-style: solid;
+    color: $bg-white;
+    @include hero-button-state(0);
+    &:hover {
+        @include hero-button-state(1);
+    }
+}

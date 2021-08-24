@@ -5,3 +5,26 @@ h1 {
 p, h2 {
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
+
+.circled-num {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: $primary-color;
+    color: $bg-white;
+    text-align: center;
+    margin-left: -10px;
+    padding-top: 3px;
+}
+
+.ico {
+    width: 20%;
+    padding-top: 3px;
+    color: $primary-color;
+    text-align: center;
+}
+
+.little-cards-text {
+    font-weight: 400;
+}

@@ -1,0 +1,40 @@
+.main-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $bg-strong-grey;
+    height: 195px;
+    &__content {
+        height: 80%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.footer-nav {
+    height: 65%;
+    &__ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        list-style-type: none;
+        height: 100%;
+    }
+}
+
+.link {
+
+    &__icon {
+        color: $bg-white;
+        margin-right: 15px;
+        width: 13px;
+        font-size: 1em;
+    }
+
+    &__a {
+        color: $bg-white;
+    }
+}

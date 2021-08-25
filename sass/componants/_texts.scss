@@ -2,8 +2,12 @@ h1 {
     font-family: Shrikhand, Arial, Helvetica, sans-serif;
 }
 
-p, h2 {
+p, h2, a {
     font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 .circled-num {
@@ -18,7 +22,7 @@ p, h2 {
     padding-top: 3px;
 }
 
-.ico {
+.little-cards-ico {
     width: 20%;
     padding-top: 3px;
     color: $primary-color;
@@ -27,4 +31,9 @@ p, h2 {
 
 .little-cards-text {
     font-weight: 400;
+}
+
+.card-title {
+    font-size: 1em;
+    font-weight: 800;
 }

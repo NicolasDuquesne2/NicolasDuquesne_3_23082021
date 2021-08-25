@@ -11,10 +11,20 @@
 @mixin hero-button-state($alt: 0) {
     background: linear-gradient($secondary-color, $primary-color);
     box-shadow: 5px 5px 5px $bg-grey, -5px 5px $bg-grey;
+    cursor: pointer;
 
     @if $alt == 1 {
         background: linear-gradient(lighten-color($secondary-color, 5%), lighten-color($primary-color, 5%));
-        cursor: pointer;
         box-shadow: 7px 7px 8px $bg-grey, -7px 8px $bg-grey;
+    }
+}
+
+@mixin big-card-button-state($alt: 0) {
+    border-style: none;
+    background-color: $bg-white;
+    cursor: pointer;
+
+    @if $alt == 1 {
+        background: red;
     }
 }

@@ -9,6 +9,51 @@
 
 body {
   margin: 0;
+  position: relative;
+}
+
+.spiner-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  z-index: 1;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-animation: lol 1.5s linear 0ms;
+          animation: lol 1.5s linear 0ms;
+}
+
+@-webkit-keyframes lol {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@keyframes lol {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
 }
 
 .main-header {
@@ -20,6 +65,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.main-header--menu {
+  height: 324px;
 }
 
 .logo-container {
@@ -35,6 +84,39 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo-container--menu {
+  height: 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.logo-container--menu__content {
+  height: 100%;
+  width: 70%;
+  padding-left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -108,6 +190,21 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.hero-container__content-frame--image {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-container--image {
+  width: 100%;
+  height: 82%;
+}
+
+.hero-image-container {
+  width: 100%;
+  height: 100%;
 }
 
 .hero-text-container {
@@ -403,6 +500,11 @@ body {
   height: 45%;
 }
 
+.logo-header--menu {
+  width: 65%;
+  height: 65%;
+}
+
 .footer-logo {
   width: 35%;
   height: 25%;
@@ -448,6 +550,15 @@ a {
 .card-title {
   font-size: 1em;
   font-weight: 800;
+}
+
+.return-link {
+  color: black;
+  font-size: 1.3em;
+}
+
+.menu-title {
+  font-family: Shrikhand, Arial, Helvetica, sans-serif;
 }
 
 .button-hero {
@@ -510,6 +621,13 @@ a {
      object-position: 45% 55%;
 }
 
+.hero-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 svg {
   height: 0;
 }
@@ -524,13 +642,14 @@ svg {
 
 .lds-dual-ring {
   display: inline-block;
-  width: 80px;
-  height: 80px;
+  margin-top: 70%;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   border: 6px solid;
-  border-color: #000 transparent #000 transparent;
-  -webkit-animation: lds-dual-ring 2s linear 0ms;
-          animation: lds-dual-ring 2s linear 0ms;
+  border-color: #ffffffff transparent #ffffffff transparent;
+  -webkit-animation: lds-dual-ring 1.5s linear 0ms;
+          animation: lds-dual-ring 1.5s linear 0ms;
 }
 
 @-webkit-keyframes lds-dual-ring {

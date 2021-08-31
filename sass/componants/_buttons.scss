@@ -13,12 +13,18 @@
 .big-card-button {
     @include big-card-button-state();
 
-    &__ico{
-        font-size: 1.5em;
-        transition: all 2000ms;
+    &__svg{
+        width:22px;
+        height: 22px;
+        stroke: black;
+        stroke-opacity: 1;
+        stroke-width: 20px;
+        fill: url("#gradient");
+        fill-opacity: 0;
+        transition: all 1500ms;
         &:hover {
-            font-weight: 900;
-            color: red;
+            stroke-opacity: 0;
+            fill-opacity: 1;
         }
     }
 }

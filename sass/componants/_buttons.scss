@@ -1,5 +1,4 @@
-.button-hero {
-    width: 70%;
+.button {
     height: 50px;
     border-radius: 30px;
     border-style: solid;
@@ -8,6 +7,15 @@
     &:hover {
         @include hero-button-state(1);
     }
+
+    &--large {
+        width: 70%;
+    }
+
+    &--close {
+        width: 50%;
+    }
+    
 }
 
 .big-card-button {

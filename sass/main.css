@@ -1,3 +1,4 @@
+@use "sass:list";
 *,
 *::after,
 *::before {
@@ -5,10 +6,6 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.container--menu {
-  height: 1676px;
 }
 
 body {
@@ -72,7 +69,7 @@ body {
 }
 
 .main-header--menu {
-  height: 19%;
+  height: 323px;
 }
 
 .logo-container {
@@ -94,7 +91,7 @@ body {
 }
 
 .logo-container--menu {
-  height: 19%;
+  height: 62px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,7 +200,7 @@ body {
 
 .hero-container--image {
   width: 100%;
-  height: 81%;
+  height: 261px;
 }
 
 .hero-image-container {
@@ -226,7 +223,8 @@ body {
 
 .menu-header {
   width: 90%;
-  height: 7%;
+  height: 100px;
+  margin-top: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,6 +235,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-container {
@@ -413,6 +414,11 @@ body {
   border-style: none;
 }
 
+.big-card-button-container {
+  height: 22px;
+  width: 22px;
+}
+
 .image-container {
   width: 100%;
   height: 70%;
@@ -451,13 +457,8 @@ body {
   padding-bottom: 15px;
 }
 
-.main-container {
-  height: 71%;
-}
-
 .menu-container {
   width: 100%;
-  height: 105%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -475,9 +476,17 @@ body {
   margin-top: -50px;
 }
 
+.menu-container--constnumcards {
+  height: 1139px;
+}
+
+.menu-container--assymnumcards {
+  height: 1222px;
+}
+
 .menu-content-frame {
   width: 90%;
-  height: 85%;
+  height: 88%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -516,7 +525,6 @@ body {
 
 .card-section {
   width: 100%;
-  height: 27%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -529,8 +537,17 @@ body {
           justify-content: space-between;
 }
 
+.card-section--3 {
+  height: 274px;
+}
+
+.card-section--4 {
+  height: 357px;
+}
+
 .card-group {
   width: inherit;
+  height: 88%;
   display: inherit;
   -webkit-box-orient: inherit;
   -webkit-box-direction: inherit;
@@ -539,7 +556,6 @@ body {
   -webkit-box-pack: inherit;
       -ms-flex-pack: inherit;
           justify-content: inherit;
-  height: 85%;
 }
 
 .card-menu-frame {
@@ -724,6 +740,14 @@ a {
           align-items: center;
 }
 
+.card-menu-text {
+  font-size: 0.8em;
+}
+
+.price {
+  font-weight: 700;
+}
+
 .button {
   height: 50px;
   border-radius: 30px;
@@ -760,6 +784,8 @@ a {
   border-style: none;
   background-color: #ffffffff;
   cursor: pointer;
+  height: 22px;
+  width: 22px;
 }
 
 .big-card-button__svg {

@@ -2,34 +2,36 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
 }
 
 .little-cards-frame {
     width: 90%;
-    height: 438px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 68px;
+
+    &__header {
+        margin-bottom: 30px;
+    }
 
     &__content {
-        height: 74%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
     }
 
     &__cards-container {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        height: 80%;
     }
 
     &__card {
         display: flex;
+        padding-top: 24px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
         flex-direction: row;
-        align-items: center;
-        height: 28%;
         margin-left: 10px;
         border-radius: 16px;
         border-style: none;
@@ -45,13 +47,15 @@
 .little-cards-text-frame {
     display: flex;
     flex-direction: row;
+    align-items: center;
     width: 100%;
 }
 
 
 .big-cards-frame {
-    height: 1226px;
     width: 100%;
+    padding-top: 56px;
+    padding-bottom: 64px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,14 +67,15 @@
         width: 90%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+    }
+
+    &__header {
+        margin-bottom: 26px;
     }
 
     &__cards-container {
-        height: 95%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
     }
 
     &__a {
@@ -90,6 +95,7 @@
         width: 100%;
         height: 100%;
         border-radius: 16px;
+        margin-bottom: 18px;
         border-style:none;
     }
 }
@@ -101,7 +107,7 @@
 
 .image-container {
     width: 100%;
-    height: 70%;
+    height: 173px;
     position: relative;
 
     &__label-container {
@@ -126,7 +132,8 @@
     flex-direction: row;
     justify-content: space-between;
     width: 90%;
-    padding-bottom: 15px;
+    padding-bottom: 18px;
+    padding-top: 18px;
 }
 
 .menu-container {

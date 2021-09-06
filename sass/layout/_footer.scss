@@ -4,18 +4,17 @@
     justify-content: center;
     align-items: center;
     background-color: $bg-strong-grey;
-    height: 195px;
     &__content {
-        height: 80%;
         width: 90%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin-bottom: 34px;
+        margin-top: 24px;
     }
 }
 
 .footer-nav {
-    height: 65%;
     &__ul {
         display: flex;
         flex-direction: column;

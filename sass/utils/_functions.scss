@@ -9,14 +9,6 @@
     @return darken($color, $rate)
 }
 
-@function block-height($heightvalue, $blocknum, $topinterval: 0, $bottinterval: 0) {
-    @return $heightvalue * $blocknum + $topinterval + $bottinterval
-}
-
-@function block-height-var($valueset1: (0,0), $valueset2: (0,0), $intervals: (0,0), $topinterval: 0, $bottinterval: 0) {
-    @return nth($valueset1, 1)*nth($valueset1, 2) + nth($valueset2, 1)*nth($valueset2, 2) + nth($intervals,1)*nth($intervals , 2) + $topinterval + $bottinterval
-}
-
 @mixin hero-button-state($alt: 0) {
     background: linear-gradient($secondary-color, $primary-color);
     box-shadow: 5px 5px 5px $bg-grey, -5px 5px $bg-grey;

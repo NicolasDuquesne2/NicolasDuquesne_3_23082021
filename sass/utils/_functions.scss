@@ -9,6 +9,7 @@
     @return darken($color, $rate)
 }
 
+
 @mixin hero-button-state($alt: 0) {
     background: linear-gradient($secondary-color, $primary-color);
     box-shadow: 5px 5px 5px $bg-grey, -5px 5px $bg-grey;
@@ -22,10 +23,8 @@
 
 @mixin big-card-button-state($alt: 0) {
     border-style: none;
-    background-color: $bg-white;
+    background-color: transparent;
     cursor: pointer;
-    height: 22px;
-    width: 22px;
 
     @if $alt == 1 {
         background: red;

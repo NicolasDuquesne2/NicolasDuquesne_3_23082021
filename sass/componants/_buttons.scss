@@ -24,9 +24,10 @@
     @include big-card-button-state();
 
     &__svg{
-        width:22px;
-        height: 22px;
+        width:24px;
+        height: 21px;
         stroke: black;
+        background: $bg-light-grey;
         stroke-opacity: 1;
         stroke-width: 20px;
         fill: url("#gradient");

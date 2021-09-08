@@ -10,6 +10,8 @@
 
     &--large {
         width: 70%;
+        word-break: break-word;
+        hyphens: auto;
     }
 
     &--close {

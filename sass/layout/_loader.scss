@@ -8,10 +8,10 @@
     background: linear-gradient($secondary-color, $primary-color);
     z-index: 1;
     transform: scaleY(0);
-    animation: lol 1.5s linear 0ms;
+    animation: trans-scaleY 1.5s linear 0ms;
 }
 
-@keyframes lol {
+@keyframes trans-scaleY {
     0% {
         transform: scaleY(1);
     }

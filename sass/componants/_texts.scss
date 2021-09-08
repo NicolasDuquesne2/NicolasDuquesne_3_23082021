@@ -34,6 +34,11 @@ a {
     flex-shrink: 0;
 }
 
+.card-text {
+    word-break: break-word;
+    hyphens: auto;
+}
+
 .little-cards-text {
     font-weight: 400;
 }
@@ -41,6 +46,11 @@ a {
 .card-title {
     font-size: 1em;
     font-weight: 800;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    &--menu {
+        white-space: nowrap;
+    }
 }
 
 .return-link {
@@ -73,10 +83,14 @@ a {
 }
 
 .card-menu-text {
+    overflow: hidden;
     font-size: 0.8em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
-
 
 .price {
     font-weight: 700;
+    font-size: 0.8em;
+    margin-left: 16px;
 }

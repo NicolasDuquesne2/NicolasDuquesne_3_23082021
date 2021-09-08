@@ -150,7 +150,7 @@
 }
 
 .menu-content-frame {
-    width: 90%;
+    width: 93%;
     display: flex;
     flex-direction: column;
     margin-bottom: 72px;
@@ -162,12 +162,6 @@
     justify-content: center;
 }
 
-.card-menu-frame {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 11px;
-}
 
 .card-section {
     width: 100%;
@@ -185,16 +179,77 @@
 }
 
 .card-menu-frame {
-    width: inherit;
-    display: inherit;
-    flex-direction: inherit;
-    justify-content: inherit;
+    display: flex;
+    flex-direction: row;
     border-radius: 16px;
     border-style: none;
     background: $bg-white;
     box-shadow: 2px 8px 8px $bg-grey, -2px -0px 8px $bg-grey;
-    padding: 16px;
+    margin-bottom: 11px;
+
+    &__describ {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 12px;
+        flex-shrink: 2;
+        width: 100%;
+        transition: all 250ms linear;
+    }
+
+    &__widget {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: $third-color;
+        border-bottom-right-radius: 16px;
+        border-top-right-radius: 16px;
+        width: 0%;
+        transform: scaleX(0);
+        transform-origin: right center;
+        transition: all 250ms linear;
+        flex-shrink: 0;
+    }
+
+    &__circle-check {
+        display: table;
+        text-align: center;
+        width: 24px;
+        height: 24px;
+        font-size: 18px;
+        color: $third-color;
+        background: white;
+        border-radius: 50%;
+        border-style: none;
+        transform: rotate(0deg);
+        transition: all 250ms linear 50ms;
+        &::before {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+
+    &:hover {
+
+        .card-menu-frame__describ {
+            width: 80%;
+        }
+
+        .card-menu-frame__widget {
+            width: 20%;
+            transform: scaleX(1);
+        }
+
+        .card-menu-frame__circle-check {
+            transform: rotate(360deg);
+        }
+    }
 }
+
+
+
+
 
 @keyframes opacity {
     0% {

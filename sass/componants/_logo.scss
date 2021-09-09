@@ -1,6 +1,16 @@
 .logo-header {
     width: 162px;
     height: 36px;
+
+    @media (min-width: 500px) {
+        filter: invert(100%);
+    }
+
+    &--menu {
+        @media (min-width: 500px) {
+            filter: invert(100%);
+        }
+    }
 }
 
 .footer-logo {

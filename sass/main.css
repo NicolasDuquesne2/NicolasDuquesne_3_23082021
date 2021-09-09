@@ -378,7 +378,12 @@ body {
           flex-direction: column;
 }
 
-.big-cards-frame__a {
+.big-card-frame {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.big-card-frame__a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -388,10 +393,9 @@ body {
           flex-direction: column;
   color: black;
   width: 100%;
-  margin-bottom: 18px;
 }
 
-.big-cards-frame__card {
+.big-card-frame__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -416,6 +420,9 @@ body {
 .big-card-button-container {
   height: 21px;
   width: 24px;
+  position: absolute;
+  bottom: 14%;
+  right: 6%;
 }
 
 .image-container {

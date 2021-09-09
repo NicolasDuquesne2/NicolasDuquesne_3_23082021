@@ -16,6 +16,7 @@ a {
 }
 
 .circled-num {
+    display: table;
     border-radius: 50%;
     height: 22px;
     width: 22px;
@@ -26,11 +27,21 @@ a {
     flex-shrink: 0;
 }
 
+@for $i from 1 through 3 {
+    .circled-num-#{$i}::after {
+        content: "#{$i}";
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 18px;
+    } 
+}
+
 .little-cards-ico {
     width: 20%;
     padding-top: 3px;
     color: $primary-color;
     text-align: center;
+    font-size: 18px;
     flex-shrink: 0;
 }
 

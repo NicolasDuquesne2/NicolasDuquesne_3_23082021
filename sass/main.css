@@ -116,7 +116,7 @@ body {
 }
 
 .place-container__texts {
-  width: 38%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -433,7 +433,7 @@ body {
   border-radius: 2px;
   border-style: none;
   font-weight: 600;
-  font-size: 1em;
+  font-size: 18px;
   padding: 6px 6px;
 }
 
@@ -788,6 +788,7 @@ a {
 }
 
 .circled-num {
+  display: table;
   border-radius: 50%;
   height: 22px;
   width: 22px;
@@ -799,11 +800,33 @@ a {
       flex-shrink: 0;
 }
 
+.circled-num-1::after {
+  content: "1";
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+.circled-num-2::after {
+  content: "2";
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+.circled-num-3::after {
+  content: "3";
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 18px;
+}
+
 .little-cards-ico {
   width: 20%;
   padding-top: 3px;
   color: #9356DC;
   text-align: center;
+  font-size: 18px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }

@@ -16,25 +16,21 @@ a {
 }
 
 .circled-num {
-    display: table;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
     border-radius: 50%;
     height: 22px;
     width: 22px;
     background-color: $primary-color;
     color: $bg-white;
     margin-left: -10px;
-    text-align: center;
     flex-shrink: 0;
+    &__number {
+        font-size: 18px;
+    }
 }
 
-@for $i from 1 through 3 {
-    .circled-num-#{$i}::after {
-        content: "#{$i}";
-        display: table-cell;
-        vertical-align: middle;
-        font-size: 18px;
-    } 
-}
 
 .little-cards-ico {
     width: 20%;
@@ -67,6 +63,9 @@ a {
 .return-link {
     color: black;
     font-size: 1.1em;
+    position: absolute;
+    top: 28px;
+    left: 22px;
     @media (min-width: 500px) {
         color: white;
     }

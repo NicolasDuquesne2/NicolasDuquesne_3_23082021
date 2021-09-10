@@ -1,12 +1,13 @@
 .logo-header {
     width: 162px;
     height: 36px;
-
+    display: flex;
     @media (min-width: 500px) {
         filter: invert(100%);
     }
 
     &--menu {
+        justify-self: center;
         @media (min-width: 500px) {
             filter: invert(100%);
         }

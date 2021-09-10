@@ -9,18 +9,14 @@
 
 .logo-container {
     width: 100%;
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     padding-top: 21px;
     padding-bottom: 19px;
-    &--menu {
-        width: 65%;
-        margin-left:7%;
-        justify-content: space-between;
-    }
-
+    
     @media (min-width: 500px) {
         background: $bg-strong-grey;
     }

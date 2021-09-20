@@ -123,7 +123,8 @@ body {
 }
 
 .place-container__texts {
-  width: 33%;
+  width: 162px;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,13 +132,18 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .place-container__texts__text {
-  margin-left: 8%;
+  margin-left: 0%;
+}
+
+.place-container__texts__ico {
+  position: absolute;
+  left: 0%;
 }
 
 .hero-container {

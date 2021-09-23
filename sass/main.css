@@ -612,13 +612,13 @@ body {
 
 @media (min-width: 768px) {
   .card-section {
-    width: 48%;
+    width: 49%;
   }
 }
 
 @media (min-width: 1024px) {
   .card-section {
-    width: 30%;
+    width: 33%;
   }
 }
 

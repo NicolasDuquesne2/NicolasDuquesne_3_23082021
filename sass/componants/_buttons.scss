@@ -29,6 +29,16 @@
         width: 54%;
         word-break: break-word;
         hyphens: auto;
+
+        @media (min-width: 768px) {
+            width:50%;
+            font-size: 1.1em;
+        }
+
+        @media (min-width: 1024px) {
+            width:40%;
+            font-size: 1.1em;
+        }
     }
     
 }

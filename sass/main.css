@@ -231,9 +231,9 @@ body {
           align-items: center;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 1440px) {
   .container, .container--menu {
-    width: 500px;
+    width: 1440px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -316,17 +316,31 @@ body {
           flex-direction: column;
 }
 
+@media (min-width: 768px) {
+  .little-cards-frame__cards-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .little-cards-frame__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  padding-top: 24px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
   margin-left: 10px;
   border-radius: 16px;
   border-style: none;
@@ -338,6 +352,13 @@ body {
 
 .little-cards-frame__card:hover {
   background-color: #f2eafb;
+}
+
+@media (min-width: 768px) {
+  .little-cards-frame__card {
+    width: 30%;
+    margin: 0;
+  }
 }
 
 .little-cards-text-frame {
@@ -442,6 +463,20 @@ body {
           flex-direction: column;
 }
 
+@media (min-width: 768px) {
+  .big-cards-frame__cards-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .big-cards-frame__a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -453,6 +488,12 @@ body {
   color: black;
   margin-bottom: 18px;
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .big-cards-frame__a {
+    width: 48%;
+  }
 }
 
 .big-cards-frame__card {
@@ -978,6 +1019,20 @@ a {
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
+}
+
+@media (min-width: 768px) {
+  .button--large {
+    width: 50%;
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .button--large {
+    width: 40%;
+    font-size: 1.1em;
+  }
 }
 
 .button--close {

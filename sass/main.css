@@ -330,12 +330,13 @@ body {
   margin-left: 10px;
   border-radius: 16px;
   border-style: none;
+  font-weight: 800;
   background-color: #f6f6f6ff;
   -webkit-box-shadow: 2px 8px 8px #eaeaeaff, -2px 0px 8px #eaeaeaff;
           box-shadow: 2px 8px 8px #eaeaeaff, -2px 0px 8px #eaeaeaff;
 }
 
-.little-cards-frame__card--alt-color {
+.little-cards-frame__card:hover {
   background-color: #f2eafb;
 }
 
@@ -351,6 +352,48 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+}
+
+.little-cards-text-frame__circled-num {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  height: 22px;
+  width: 22px;
+  background-color: #9356DC;
+  color: #ffffffff;
+  margin-left: -10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.little-cards-text-frame__circled-num__number {
+  font-size: 18px;
+}
+
+.little-cards-text-frame__little-cards-ico {
+  width: 20%;
+  padding-top: 3px;
+  color: #949494ff;
+  text-align: center;
+  font-size: 18px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.little-cards-text-frame__little-cards-text {
+  font-weight: 800;
+}
+
+.little-cards-text-frame:hover .little-cards-text-frame__little-cards-ico {
+  color: #9356DC;
 }
 
 .big-cards-frame {
@@ -832,49 +875,11 @@ a {
           hyphens: auto;
 }
 
-.circled-num {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 50%;
-  height: 22px;
-  width: 22px;
-  background-color: #9356DC;
-  color: #ffffffff;
-  margin-left: -10px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-}
-
-.circled-num__number {
-  font-size: 18px;
-}
-
-.little-cards-ico {
-  width: 20%;
-  padding-top: 3px;
-  color: #9356DC;
-  text-align: center;
-  font-size: 18px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-}
-
 .card-text {
   word-break: break-word;
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
-}
-
-.little-cards-text {
-  font-weight: 400;
 }
 
 .card-title {
@@ -944,9 +949,10 @@ a {
 
 .button {
   border-radius: 30px;
-  border-style: solid;
+  border-style: none;
   color: #ffffffff;
-  padding: 20px;
+  padding: 14px;
+  font-weight: 700;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-box-shadow: 5px 5px 5px #eaeaeaff, -5px 5px #eaeaeaff;
@@ -975,7 +981,7 @@ a {
 }
 
 .button--close {
-  width: 70%;
+  width: 54%;
   word-break: break-word;
   -webkit-hyphens: auto;
       -ms-hyphens: auto;

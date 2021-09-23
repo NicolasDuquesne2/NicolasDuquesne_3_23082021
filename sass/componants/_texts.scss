@@ -15,40 +15,12 @@ a {
     hyphens: auto;
 }
 
-.circled-num {
-    display: flex;
-    justify-content: center;
-    align-items: center ;
-    border-radius: 50%;
-    height: 22px;
-    width: 22px;
-    background-color: $primary-color;
-    color: $bg-white;
-    margin-left: -10px;
-    flex-shrink: 0;
-    &__number {
-        font-size: 18px;
-    }
-}
-
-
-.little-cards-ico {
-    width: 20%;
-    padding-top: 3px;
-    color: $primary-color;
-    text-align: center;
-    font-size: 18px;
-    flex-shrink: 0;
-}
 
 .card-text {
     word-break: break-word;
     hyphens: auto;
 }
 
-.little-cards-text {
-    font-weight: 400;
-}
 
 .card-title {
     font-size: 1em;

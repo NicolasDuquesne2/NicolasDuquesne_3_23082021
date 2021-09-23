@@ -1,8 +1,9 @@
 .button {
     border-radius: 30px;
-    border-style: solid;
+    border-style: none;
     color: $bg-white;
-    padding: 20px;
+    padding: 14px;
+    font-weight: 700;
     @include hero-button-state();
     &:hover {
         @include hero-button-state(1);
@@ -15,7 +16,7 @@
     }
 
     &--close {
-        width: 70%;
+        width: 54%;
         word-break: break-word;
         hyphens: auto;
     }
